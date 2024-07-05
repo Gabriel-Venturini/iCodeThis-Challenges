@@ -1,0 +1,171 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+body {
+    /* background-color: #009EFA; */
+    background-image: linear-gradient(to right, #FA8F00, #5EFA00, #F500FA);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* ids */
+
+#price-wall-body {
+    /* background-color: #004FFA; */
+    /* background-color: white; */
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 700px;
+    height: 400px;
+
+    overflow: hidden;
+
+    box-shadow: 5px 4px 20px 0px #377DA5;
+    border-radius: 12px;
+}
+
+#button-1 {
+    background-color: #FA8F00;
+
+    box-shadow: 0px 0px 4px 4px #FA8F00;
+}
+
+#button-2 {
+    background-color: #5EFA00;
+
+    box-shadow: 0px 0px 4px 4px #5EFA00;
+}
+
+#button-3 {
+    background-color: #F500FA;
+
+    box-shadow: 0px 0px 4px 4px #F500FA;
+}
+
+/* classes */
+
+
+.price-wall {
+    background-color: white;
+    box-shadow: 0px 0px 0px 1px black;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 680px;
+    height: 380px;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: column;
+
+    /* box-shadow: 0px 0px 0px 1px black; */
+
+    width: 220px;
+    height: 340px;
+
+    transition: width 0.3s ease, height 0.3s ease;
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.plan-title {
+    align-self: center;
+
+    color: rgba(0, 0, 0, 0.75);
+
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.plan-price {
+    align-self: flex-start;
+    
+    text-shadow: 1px 1px 1px black;
+
+    padding: 0px 0px 0px 30px;
+    margin: 20px 0px 10px 0px;    
+}
+
+.plan-description-1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: small;
+
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+
+    padding: 0px 0px 0px 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.plan-description-2 {
+    color: rgba(0, 0, 0, 0.7);
+
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+
+    padding: 0px 0px 0px 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+.option-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: blue;
+    box-shadow: 0px 0px 1px 1px black;
+
+    border-radius: 10px;
+    
+    align-self: center;
+
+    height: 50px;
+    width: 60%;
+
+    margin: 60px 50px 0px 50px;
+}
+
+/* elements */
+
+a {
+    color: black;
+    text-decoration: none;
+
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* extra */
+
+.price-tag:hover {
+    height: 380px;
+}
+
+.plan-price::first-letter {
+    font-size: medium;
+}
