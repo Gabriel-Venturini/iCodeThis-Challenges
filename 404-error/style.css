@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/dynasty');
+@import url('https://fonts.cdnfonts.com/css/pixel-sport');
+
+/* main */
+
+* {
+    font-family: 'Pixel Sport', sans-serif;
+    font-size: large;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    height: 100vh;
+    position: relative;
+
+    background-color: #332B2B;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(51,43,43,1) 90%);
+}
+
+/* tags */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-shadow: 1px 1px 1px 1px#332B2B;
+
+    padding: 0px 25px;
+    margin: 0px 0px 5px 0px;
+    font-size: x-large;
+
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dynasty', sans-serif;
+    font-size: xx-large;
+
+    align-self: center;
+
+    position: absolute;
+    top: 0;
+
+    margin: 50px;
+
+    color: white;
+}
+
+/* classes */
+
+.message {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    color: white;
+
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.return-button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 100px;
+
+    background-color: #F00D00;
+
+    border-radius: 5px;
+
+    color: white;
+    font-weight: normal;
+
+    margin-top: 20px;
+}
+
+/* extra / animations */
+
+.return-button:hover {
+    height: 40px;
+    width: 120px;
+
+    font-size: x-large;
+
+    transition: 0.3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
